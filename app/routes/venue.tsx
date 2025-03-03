@@ -12,11 +12,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Venues() {
   const [showDetails, setShowDetails] = useState(false);
   const toggleShowDetails = () => {
-    document.startViewTransition(() => {
-      flushSync(() => {
-        setShowDetails((prevState) => !prevState);
-      });
-    });
+    setShowDetails((prevState) => !prevState);
   };
   return (
     <main className="mx-auto max-w-screen-lg space-y-4 p-4">

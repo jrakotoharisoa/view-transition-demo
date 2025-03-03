@@ -17,14 +17,8 @@ export const VenueDetails: React.FC<{ venue: Venue; onClick?: () => void }> = ({
           </button>
         </div>
       )}
-      <div
-        className="bg-background-primary relative space-y-2 rounded p-4"
-        style={{ viewTransitionName: `container-${venue.slug}` }}
-      >
-        <div
-          style={{ viewTransitionName: `text-${venue.slug}` }}
-          className="w-fit"
-        >
+      <div className="bg-background-primary relative space-y-2 rounded p-4">
+        <div>
           <h3 className="text-brand-secondary font-bold">{venue.subname}</h3>
           <h2 className="title-2">{venue.name}</h2>
         </div>
