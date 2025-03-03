@@ -22,6 +22,11 @@ export default function Home() {
             Venue
           </Link>
         </li>
+        <li>
+          <Link className={linkClassname} to="/venues">
+            React-router Venue
+          </Link>
+        </li>
       </ul>
     </main>
   );

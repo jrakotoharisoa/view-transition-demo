@@ -2,7 +2,7 @@ import { useState } from "react";
 import { venues } from "~/data/venues";
 import { VenueCard } from "~/demo/venue/VenueCard";
 import { VenueDetails } from "~/demo/venue/VenueDetails";
-import type { Route } from "./+types/home";
+import type { Route } from "./+types/venue";
 import { flushSync } from "react-dom";
 
 export function meta({}: Route.MetaArgs) {
@@ -20,7 +20,7 @@ export default function Venues() {
   };
   return (
     <main className="mx-auto max-w-screen-lg space-y-4 p-4">
-      <h1 className="title-1">Comet Venues</h1>
+      <h1 className="title-1">Venue</h1>
       {showDetails ? (
         <VenueDetails venue={venues[0]} onClick={toggleShowDetails} />
       ) : (

@@ -15,9 +15,8 @@
 
 html,
 body {
-  @apply bg-background-primary;
+  @apply bg-background-secondary;
   color: var(--color-content-primary);
-
   /* @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   } */

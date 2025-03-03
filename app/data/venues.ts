@@ -1,6 +1,6 @@
 export type Venue = {
   imgSrc: string;
-  id: string;
+  slug: string;
   name: string;
   subname: string;
   description: string;
@@ -8,7 +8,7 @@ export type Venue = {
 
 export const venues: Venue[] = [
   {
-    id: "comet-levallois",
+    slug: "comet-levallois",
     name: "Comet Levallois",
     subname: "Le grand Comet",
     description:
@@ -17,7 +17,7 @@ export const venues: Venue[] = [
       "https://res.cloudinary.com/ddyhxyc8l/image/upload/w_1600,h_1067,c_fill,g_auto/v1658133621/booking/comet-levallois/4.jpg",
   },
   {
-    id: "comet-arboretum",
+    slug: "comet-arboretum",
     name: "Comet Arboretum",
     subname: "La Fabrique de la Connaissance",
     description:

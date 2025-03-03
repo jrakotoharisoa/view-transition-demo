@@ -7,12 +7,15 @@ export const VenueCard: React.FC<{ venue: Venue; onClick?: () => void }> = ({
 }) => {
   return (
     <div
-      className="hover:text-brand-primary hover:border-brand-primary relative max-w-[400px] space-y-2 rounded border border-slate-500 p-4 hover:cursor-pointer"
-      style={{ viewTransitionName: "container" }}
+      className="hover:text-brand-primary hover:border-brand-primary bg-primary bg-background-primary relative max-w-[400px] space-y-2 rounded p-4 hover:cursor-pointer"
+      style={{ viewTransitionName: `container-${venue.slug}` }}
     >
       <VenueImage src={venue.imgSrc} />
       <div className="flex items-center justify-between">
-        <div>
+        <div
+          style={{ viewTransitionName: `text-${venue.slug}` }}
+          className="w-fit"
+        >
           <h3 className="text-brand-secondary font-bold">{venue.subname}</h3>
           <h2 className="title-2">{venue.name}</h2>
         </div>
