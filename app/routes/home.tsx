@@ -13,10 +13,11 @@ export default function Home() {
       <h1 className="title-1">View transition API | Demos</h1>
       <ul>
         <li>
-          <Link className={linkClassname} to="/into">
-            Intro
+          <Link className={linkClassname} to="/live">
+            Live
           </Link>
         </li>
+
         <li>
           <Link className={linkClassname} to="/venue">
             Venue

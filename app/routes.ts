@@ -7,7 +7,7 @@ import {
 
 export default [
   index("routes/home.tsx"),
-  route("intro", "routes/introduction.tsx"),
+  route("live", "routes/live.tsx"),
   route("venue", "routes/venue.tsx"),
   ...prefix("venues", [
     index("routes/venues.tsx"),
