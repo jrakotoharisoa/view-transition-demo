@@ -17,11 +17,12 @@ function demo() {
   const handleInputChange = () => {
     const element = document.getElementById(ELEMENT_ID);
     element?.classList.toggle("left-[200px]");
+    element?.classList.toggle("size-40");
   };
 
   return (
     <div className="space-y-4">
-      <Checkbox label="move" onChange={handleInputChange} />
+      <Checkbox label="Animate" onChange={handleInputChange} />
       <div className="relative min-h-20">
         <Circle id={ELEMENT_ID} />
       </div>
@@ -32,7 +33,7 @@ function demo() {
 
 export default function Live() {
   return (
-    <main className="mx-auto max-w-screen-lg p-4">
+    <main className="size- mx-auto max-w-screen-lg p-4">
       <h1 className="title-1">Live demo</h1>
       <div className="grid grid-cols-2 gap-4">
         <LiveProvider code={code} scope={scope} enableTypeScript language="tsx">

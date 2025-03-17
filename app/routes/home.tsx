@@ -9,12 +9,12 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-screen-lg p-4">
+    <main className="mx-auto max-w-screen-lg space-y-4 p-4">
       <h1 className="title-1">View transition API | Demos</h1>
-      <ul>
+      <ul className="space-y-2">
         <li>
-          <Link className={linkClassname} to="/live">
-            Live
+          <Link className={linkClassname} to="/view-transition-api">
+            View transition API
           </Link>
         </li>
 

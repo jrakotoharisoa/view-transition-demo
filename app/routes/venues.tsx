@@ -14,7 +14,7 @@ export default function Venues() {
       <ul className="flex flex-wrap gap-4">
         {venues.map((venue) => (
           <li key={venue.slug}>
-            <Link to={`./${venue.slug}`} viewTransition>
+            <Link to={`./${venue.slug}`}>
               <VenueCard venue={venue} />
             </Link>
           </li>

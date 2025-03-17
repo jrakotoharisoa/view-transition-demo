@@ -7,7 +7,7 @@ import {
 
 export default [
   index("routes/home.tsx"),
-  route("live", "routes/live.tsx"),
+  route("view-transition-api", "routes/live.tsx"),
   route("venue", "routes/venue.tsx"),
   ...prefix("venues", [
     index("routes/venues.tsx"),
