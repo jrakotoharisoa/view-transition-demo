@@ -2,7 +2,7 @@ import { flushSync } from "react-dom";
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live";
 import { Checkbox } from "~/ui/Checkbox";
 import { Circle } from "~/ui/Circle";
-import type { Route } from "./+types/home";
+import type { Route } from "./+types/api";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Live | View transition API" }];

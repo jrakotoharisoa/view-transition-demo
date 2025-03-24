@@ -2,7 +2,7 @@ import { useState } from "react";
 import { venues } from "~/data/venues";
 import { VenueCard } from "~/demo/venue/VenueCard";
 import { VenueDetails } from "~/demo/venue/VenueDetails";
-import type { Route } from "./+types/venue";
+import type { Route } from "./+types/react";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Venues | View transition API" }];

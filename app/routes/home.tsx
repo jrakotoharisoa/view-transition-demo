@@ -15,7 +15,7 @@ export default function Home() {
         <li>
           <Link
             className={linkClassname}
-            to="/view-transition-api"
+            to="/api"
             viewTransition
             style={{ viewTransitionName: "title-api" }}
           >
@@ -26,7 +26,7 @@ export default function Home() {
         <li>
           <Link
             className={linkClassname}
-            to="/venue"
+            to="/react"
             viewTransition
             style={{ viewTransitionName: "title-react" }}
           >
