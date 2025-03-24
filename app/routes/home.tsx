@@ -13,19 +13,34 @@ export default function Home() {
       <h1 className="title-1">View transition API | Demos</h1>
       <ul className="space-y-2">
         <li>
-          <Link className={linkClassname} to="/view-transition-api">
-            View transition API
+          <Link
+            className={linkClassname}
+            to="/view-transition-api"
+            viewTransition
+            style={{ viewTransitionName: "title-api" }}
+          >
+            API demo
           </Link>
         </li>
 
         <li>
-          <Link className={linkClassname} to="/venue">
-            Venue
+          <Link
+            className={linkClassname}
+            to="/venue"
+            viewTransition
+            style={{ viewTransitionName: "title-react" }}
+          >
+            React demo
           </Link>
         </li>
         <li>
-          <Link className={linkClassname} to="/venues">
-            React-router Venue
+          <Link
+            className={linkClassname}
+            to="/venues"
+            viewTransition
+            style={{ viewTransitionName: "title-react-router" }}
+          >
+            React-router demo
           </Link>
         </li>
       </ul>

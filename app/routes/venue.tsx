@@ -15,7 +15,12 @@ export default function Venues() {
   };
   return (
     <main className="mx-auto max-w-screen-lg space-y-4 p-4">
-      <h1 className="title-1">Venue</h1>
+      <h1
+        className="title-1 w-fit"
+        style={{ viewTransitionName: "title-react" }}
+      >
+        React demo
+      </h1>
       {showDetails ? (
         <VenueDetails venue={venues[0]} onClick={toggleShowDetails} />
       ) : (

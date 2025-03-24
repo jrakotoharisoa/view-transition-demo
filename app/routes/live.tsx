@@ -34,7 +34,9 @@ function demo() {
 export default function Live() {
   return (
     <main className="size- mx-auto max-w-screen-lg p-4">
-      <h1 className="title-1">Live demo</h1>
+      <h1 className="title-1 w-fit" style={{ viewTransitionName: "title-api" }}>
+        API demo
+      </h1>
       <div className="grid grid-cols-2 gap-4">
         <LiveProvider code={code} scope={scope} enableTypeScript language="tsx">
           <LiveEditor />

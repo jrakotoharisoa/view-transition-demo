@@ -10,7 +10,12 @@ export function meta({}: Route.MetaArgs) {
 export default function Venues() {
   return (
     <main className="mx-auto max-w-screen-lg space-y-4 p-4">
-      <h1 className="title-1">Comet Venues</h1>
+      <h1
+        className="title-1 w-fit"
+        style={{ viewTransitionName: "title-react-router" }}
+      >
+        React-router demo
+      </h1>
       <ul className="flex flex-wrap gap-4">
         {venues.map((venue) => (
           <li key={venue.slug}>
