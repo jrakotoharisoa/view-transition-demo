@@ -2,5 +2,6 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "prettier.configPath": "",
-  "workbench.colorTheme": "Default Light Modern"
+  "workbench.colorTheme": "Default Light Modern",
+  "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace"
 }
