@@ -7,7 +7,10 @@ export const Circle: React.FC<{
 }> = ({ id, className, style = {} }) => (
   <div
     id={id}
-    className={twMerge("absolute size-20 rounded-full bg-gray-800", className)}
+    className={twMerge(
+      "bg-brand-secondary absolute size-20 rounded-full",
+      className,
+    )}
     style={style}
   />
 );
