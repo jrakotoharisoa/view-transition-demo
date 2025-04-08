@@ -2,50 +2,50 @@ import { flushSync } from "react-dom";
 import { type ComponentProps } from "react";
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live";
 import { Checkbox } from "~/ui/Checkbox";
-import { Circle } from "~/ui/Circle";
+import { Boat } from "~/ui/Boat";
 import type { Route } from "./+types/api";
 import { twMerge } from "tailwind-merge";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Live | View transition API" }];
 }
-const SMALL_CIRCLE_ID = "small-circle-id";
-const BIG_CIRCLE_ID = "big-circle-id";
-const SmallCircle: React.FC<ComponentProps<typeof Circle>> = (props) => (
-  <Circle {...props} id={SMALL_CIRCLE_ID} />
+const FAR_BOAT_ID = "far-boat-id";
+const CLOSE_BOAT_ID = "close-boat-id";
+const FarBoat: React.FC<ComponentProps<typeof Boat>> = (props) => (
+  <Boat {...props} id={FAR_BOAT_ID} />
 );
-const BigCircle: React.FC<ComponentProps<typeof Circle>> = (props) => (
-  <Circle
+const CloseBoat: React.FC<ComponentProps<typeof Boat>> = (props) => (
+  <Boat
     {...props}
-    id={BIG_CIRCLE_ID}
-    className={twMerge("bg-brand-primary size-40", props.className)}
+    id={CLOSE_BOAT_ID}
+    className={twMerge("text-9xl", props.className)}
   />
 );
 
 const scope = {
   Checkbox,
-  SmallCircle,
-  BigCircle,
-  BIG_CIRCLE_ID,
-  SMALL_CIRCLE_ID,
+  FarBoat,
+  CloseBoat,
+  CLOSE_BOAT_ID,
+  FAR_BOAT_ID,
   flushSync,
 };
 
 const code = `
 function demo() {
   const handleInputChange = () => {
-    const smallCircle = document.getElementById(SMALL_CIRCLE_ID);
-    const bigCircle = document.getElementById(BIG_CIRCLE_ID);
-    smallCircle?.classList.toggle("hidden");
-    bigCircle?.classList.toggle("hidden");
+    const farBoat = document.getElementById(FAR_BOAT_ID);
+    const closeBoat = document.getElementById(CLOSE_BOAT_ID);
+    farBoat?.classList.toggle("hidden");
+    closeBoat?.classList.toggle("hidden");
   };
 
   return (
     <div className="space-y-4">
-      <Checkbox label="Animate" onChange={handleInputChange} />
-      <div className="relative min-h-20">
-        <SmallCircle  />
-        <BigCircle className="hidden left-[200px] " />
+      <Checkbox label="Move closer" onChange={handleInputChange} />
+      <div className="relative">
+        <FarBoat  />
+        <CloseBoat className="hidden absolute top-[30px] " />
       </div>
     </div>
   );
