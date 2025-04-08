@@ -45,7 +45,7 @@ function demo() {
       <Checkbox label="Move closer" onChange={handleInputChange} />
       <div className="relative">
         <FarBoat  />
-        <CloseBoat className="hidden absolute top-[30px] " />
+        <CloseBoat className="hidden absolute top-[30px]" />
       </div>
     </div>
   );
