@@ -13,6 +13,10 @@
   --color-background-secondary: #f7ebdf;
 }
 
+/* @view-transition {
+  navigation: auto;
+} */
+
 html,
 body {
   @apply bg-background-secondary;
